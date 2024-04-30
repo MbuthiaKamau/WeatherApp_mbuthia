@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="12dp"
+                android:background="#99000000"
+                android:hint="@string/select"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:boxBackgroundColor="#99000000"
+                app:boxStrokeColor="@color/white"
+                app:boxStrokeWidth="2dp"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="@color/white"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                style="@style/CustomExposedDropdownMenuIcon">
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="none"
+                    android:text="Glasgow"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/viewDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="0.7"
+                    android:text="TODAY"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/homeDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mon June 17"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_2"
+                android:layout_margin="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/homeWeatherImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:srcCompat="@drawable/cloudy_sunny" />
+
+                <TextView
+                    android:id="@+id/homeWeatherTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mostly Cloudy"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/homeTemparatureTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="25°"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="43sp"
+                    android:layout_marginTop="4dp" />
+                <TextView
+                    android:id="@+id/homeBothTempTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="H:27 L:10"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/sunrise" />
+
+                        <TextView
+                            android:id="@+id/sunrise"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18%"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Sunrise"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            app:srcCompat="@drawable/humidity" />
+
+                        <TextView
+                            android:id="@+id/homeHumidityTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="25 km/h"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="humidity"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:rotation="180"
+                            app:srcCompat="@drawable/sunrise" />
+
+                        <TextView
+                            android:id="@+id/sunset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18%"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Sunset"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_2"
+                android:layout_margin="16dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="10dp"
+                    android:text="Weather Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/pollution" />
+
+                        <TextView
+                            android:id="@+id/pollution"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18%"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Pollution"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/Wind"
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            app:srcCompat="@drawable/wind" />
+
+                        <TextView
+                            android:id="@+id/homeWindTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="25 km/h"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/windLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Wind"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/wdirection" />
+
+                        <TextView
+                            android:id="@+id/winddirection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18%"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Wind Direction"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/pressure" />
+
+                        <TextView
+                            android:id="@+id/pressure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18%"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Pressure"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            app:srcCompat="@drawable/uv" />
+
+                        <TextView
+                            android:id="@+id/UvRisk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="25 km/h"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="UV Risk"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            app:srcCompat="@drawable/visibility" />
+
+                        <TextView
+                            android:id="@+id/visibility"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="18%"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Visibility"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/background_2"
+                android:layout_margin="16dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="10dp"
+                    android:text="Calendar"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/CalenderViewCustom"
+                    android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                    android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+                    app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_Borrowing" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/scrollUpTextView"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Scroll Up to Open Map"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="top|center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<weatherData>
+    <location>
+        <city>London</city>
+    </location>
+    <dayData>
+        <date>12/12/2024</date>
+        <minTemp>10</minTemp>
+        <maxTemp>25</maxTemp>
+        <humidity>18</humidity>
+        <wind>20</wind>
+        <rain>5</rain>
+        <overallCondition>cloudy</overallCondition>
+        <hourlyData>
+            <hour>
+                <condition>sun</condition>
+                <time>10 pm</time>
+                <temperature>25</temperature>
+            </hour>
+            <hour>
+                <condition>sun</condition>
+                <time>11 pm</time>
+                <temperature>10</temperature>
+            </hour>
+            <hour>
+                <condition>wind</condition>
+                <time>12 am</time>
+                <temperature>12</temperature>
+            </hour>
+            <hour>
+                <condition>rainy</condition>
+                <time>1 am</time>
+                <temperature>12</temperature>
+            </hour>
+            <hour>
+                <condition>storm</condition>
+                <time>2 am</time>
+                <temperature>12</temperature>
+            </hour>
+            <hour>
+                <condition>rainy</condition>
+                <time>3 am</time>
+                <temperature>10</temperature>
+            </hour>
+        </hourlyData>
+    </dayData>
+    <dayData>
+        <date>13/12/2024</date>
+        <minTemp>10</minTemp>
+        <maxTemp>20</maxTemp>
+        <humidity>18</humidity>
+        <wind>20</wind>
+        <rain>5</rain>
+        <overallCondition>cloudy</overallCondition>
+    </dayData>
+    <dayData>
+        <date>13/12/2024</date>
+        <minTemp>10</minTemp>
+        <maxTemp>20</maxTemp>
+        <humidity>18</humidity>
+        <wind>20</wind>
+        <rain>5</rain>
+        <overallCondition>cloudy</overallCondition>
+    </dayData>
+    <dayData>
+        <date>13/12/2024</date>
+        <minTemp>10</minTemp>
+        <maxTemp>20</maxTemp>
+        <humidity>18</humidity>
+        <wind>20</wind>
+        <rain>5</rain>
+        <overallCondition>cloudy</overallCondition>
+    </dayData>
+    <dayData>
+        <date>13/12/2024</date>
+        <minTemp>10</minTemp>
+        <maxTemp>20</maxTemp>
+        <humidity>18</humidity>
+        <wind>20</wind>
+        <rain>5</rain>
+        <overallCondition>cloudy</overallCondition>
+    </dayData>
+</weatherData>
